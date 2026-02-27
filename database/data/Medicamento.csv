@@ -1,0 +1,703 @@
+﻿COD_LINAME;COD_CATEGORIA;NOMBREGENERICO;COD_UNIDAD;OBSERVACIONES;STOCKMAX;STOCKMIN;DARMAX;DARMIN;ESTADO;USR
+A0101;12;Bicarbonato de sodio 20 g;35;;0;0;0;0;27;1
+A0201;12;Hidroxido de aluminio y magnesio 1 : 1;58;;0;0;0;0;27;1
+A0202;12;Omeprazol 20 mg;2;;0;0;0;0;27;1
+A0203;12;Ranitidina 150 mg;7;;0;0;0;0;27;1
+A0204;12;Ranitidina 50 mg;27;;0;0;0;0;27;1
+A0205;12;Omeprazol 40 mg/ml;27;;0;0;0;0;27;1
+A0301;12;Atropina sulfato 1 mg/ml;27;;0;0;0;0;27;1
+A0302;12;Butilbromuro de Hioscina (Butilescopolamina) 10 mg;7;;0;0;0;0;27;1
+A0303;12;Butilbromuro de Hioscina (Butilescopolamina) 0,1%;52;;0;0;0;0;27;1
+A0304;12;Butilbromuro de Hioscina (Butilescopolamina) 20 mg/ml;27;;0;0;0;0;27;1
+A0306;12;Domperidona 10 mg;7;;0;0;0;0;27;1
+A0307;12;Metoclopramida 10 mg;7;;0;0;0;0;27;1
+A0308;12;Metoclopramida 10 mg/2 ml;27;;0;0;0;0;27;1
+A0309;12;Metoclopramida 0,35% o 0,5%;52;;0;0;0;0;27;1
+A0310;12;Propinoxato 10 mg;7;;0;0;0;0;27;1
+A0311;12;Propinoxato 5 mg/ml;27;;0;0;0;0;27;1
+A0312;12;Simeticona 3% o 4%;58;;0;0;0;0;27;1
+A0313;12;Simeticona 100 mg;7;;0;0;0;0;27;1
+A0401;12;Ondansetrón 8 mg;27;;0;0;0;0;27;1
+A0402;12;Ondansetrón 8 mg;7;;0;0;0;0;27;1
+A0601;12;Aceite mineral 40%;18;;0;0;0;0;27;1
+A0602;12;Bisacodilo 5 mg;7;;0;0;0;0;27;1
+A0604;12;Fibra natural Según disponibilidad;36;;0;0;0;0;27;1
+A0606;12;Glicerol (Glicerina) 1 g a 1,80 g (infantil);57;;0;0;0;0;27;1
+A0607;12;Lactulosa 65% a 67%;51;;0;0;0;0;27;1
+A0608;12;Sulfato de Magnesio 20 g a 30 g;25;;0;0;0;0;27;1
+A0701;12;Carbón medicinal activado segun disponibilidad;35;;0;0;0;0;27;1
+A0702;12;Loperamida 2 mg;4;;0;0;0;0;27;1
+A0703;12;Nistatina 500.000 UI;7;;0;0;0;0;27;1
+A0704;12;Nistatina 500.000 UI/5 ml;58;;0;0;0;0;27;1
+A0706;12;Sales de rehidratación oral (SRO) baja osmolaridad Según concentración estandar;43;;0;0;0;0;27;1
+A0901;12;Enzimas pancreaticas (Lipasa, Proteasa y Amilasa en combinación) Según disponibilidad;7;;0;0;0;0;27;1
+A1001;12;Glibenclamida 5 mg;7;;0;0;0;0;27;1
+A1002;12;Insulina recombinante humana NPH 100 UI/ml;27;;0;0;0;0;27;1
+A1003;12;Insulina zinc cristalina  recombinante humana 100 UI/ml;27;;0;0;0;0;27;1
+A1004;12;Metformina 850 mg;7;;0;0;0;0;27;1
+A1102;12;Acido Ascorbico (Vitamina C) 500 mg/ml (2 ml);27;;0;0;0;0;27;1
+A1103;12;Acido Ascórbico (Vitamina C) Según disponibilidad;52;;0;0;0;0;27;1
+A1104;12;Cianocobalamina (Vitamina B12) 1 mg/ml;27;;0;0;0;0;27;1
+A1105;12;Colecalciferol (Vitamina D3) 0,25 mcg;9;;0;0;0;0;27;1
+A1106;12;Complejo  B (B1 + B6 + B12) Según concentración estandar;7;;0;0;0;0;27;1
+A1107;12;Complejo  B (B1 + B6 + B12) Según concentración estandar;27;;0;0;0;0;27;1
+A1108;12;Complejo de vitaminas y minerales (Uso pediatría) CMV Según disponibilidad;40;;0;0;0;0;27;1
+A1109;12;Multivitaminas Según concentración estandar;7;;0;0;0;0;27;1
+A1110;12;Multivitaminas Según concentración estandar;28;;0;0;0;0;27;1
+A1111;12;Piridoxina clorhidrato (Vitamina B6) 300 mg;7;;0;0;0;0;27;1
+A1112;12;Piridoxina clorhidrato (Vitamina B6) 300 mg;27;;0;0;0;0;27;1
+A1113;12;Retinol (Vitamina A) 10.000 UI;5;;0;0;0;0;27;1
+A1115;12;Retinol (Vitamina A) 100.000 UI;5;;0;0;0;0;27;1
+A1117;12;Tiamina (Vitamina B 1) 300 mg;7;;0;0;0;0;27;1
+A1118;12;Tiamina (Vitamina B 1) 100 mg/ml;27;;0;0;0;0;27;1
+A1119;12;Tocoferol (Vitamina E) 1.000 UI;3;;0;0;0;0;27;1
+A1201;12;Calcio (carbonato o citrato) 500 mg (ión calcio);7;;0;0;0;0;27;1
+A1202;12;"Calcio + Vitamina D 500 mg (ión calcio); Según disponibilidad";64;;0;0;0;0;27;1
+A1203;12;Cloruro de potasio 1,3 mEq/ml;51;;0;0;0;0;27;1
+A1205;12;Zinc (como sulfato) 20 mg/5 ml;28;;0;0;0;0;27;1
+A1206;12;Zinc (como sulfato) 20 mg;7;;0;0;0;0;27;1
+A1207;12;Suplizinc 10 ml;28;;0;0;0;0;27;1
+B0101;13;Acido acetil salicílico 100 mg;7;;0;0;0;0;27;1
+B0103;13;Heparina de bajo peso molecular Según disponibilidad o requerimiento;27;;0;0;0;0;27;1
+B0104;13;Heparina sódica 5.000 UI/ml;27;;0;0;0;0;27;1
+B0105;13;Warfarina 5 mg;8;;0;0;0;0;27;1
+B0106;13;Clopidogrel 75 mg;7;;0;0;0;0;27;1
+B0202;13;Fitomenadiona  (Vitamina K1) 10 mg/ml;27;;0;0;0;0;27;1
+B0203;13;Etamsilato 250 mg/2 ml;27;;0;0;0;0;27;1
+B0301;13;Acido folico 5 mg;7;;0;0;0;0;27;1
+B0302;13;Eritropoyetina 10.000 UI;27;;0;0;0;0;27;1
+B0303;13;Eritropoyetina 4.000 UI;27;;0;0;0;0;27;1
+B0304;13;Hierro 100 mg - IM/IV;27;;0;0;0;0;27;1
+B0307;13;Sulfato ferroso 125 mg/ml;51;;0;0;0;0;27;1
+B0308;13;Sulfato ferroso + Ac. Fólico + Vitamina C 200 mg + 0,5 mg + 150 mg;7;;0;0;0;0;27;1
+B0309;13;Sulfato ferroso + Ac. Fólico + Vitamina C 125 mg + 0,25 mg + 30 mg;51;;0;0;0;0;27;1
+B0501;13;Agua para inyección 5 ml;27;;0;0;0;0;27;1
+B0502;13;Albúmina humana 20%;27;;0;0;0;0;27;1
+B0503;13;Aminoacidos 10%;55;;0;0;0;0;27;1
+B0504;13;Bicarbonato de sodio 8%;27;;0;0;0;0;27;1
+B0506;13;Cloruro de potasio 20%;27;;0;0;0;0;27;1
+B0507;13;Cloruro de sodio 20%;27;;0;0;0;0;27;1
+B0509;13;Emulsión de lípidos Según disponibilidad;17;;0;0;0;0;27;1
+B0510;13;Gluconato Calcico (Calcio Gluconato) 10%;27;;0;0;0;0;27;1
+B0511;13;Oligoelementos para nutricion parenteral Según disponibilidad;55;;0;0;0;0;27;1
+B0512;13;Agentes con gelatina Según disponibilidad;55;;0;0;0;0;27;1
+B0513;13;Solucion Acida Según disponibilidad;44;;0;0;0;0;27;1
+B0514;13;Solución Basica Según disponibilidad;44;;0;0;0;0;27;1
+B0515;13;Solución de glucosa 5% (500 ml);55;;0;0;0;0;27;1
+B0516;13;Solución de glucosa 5% (1.000 ml);55;;0;0;0;0;27;1
+B0517;13;Solución de glucosa 10% (500 ml);55;;0;0;0;0;27;1
+B0518;13;Solución de glucosa 10% (1.000 ml);55;;0;0;0;0;27;1
+B0519;13;Solución de glucosa 50% (500 ml);55;;0;0;0;0;27;1
+B0520;13;Solución de glucosa 50% (20 ml);27;;0;0;0;0;27;1
+B0521;13;Solución de Manitol 20% (500 ml);55;;0;0;0;0;27;1
+B0522;13;Solución Fisiologica 0,9% (500 ml);55;;0;0;0;0;27;1
+B0523;13;Solución Fisiologica 0,9% (1.000 ml);55;;0;0;0;0;27;1
+B0524;13;Solución glucosada clorurada 500 ml;55;;0;0;0;0;27;1
+B0525;13;Solución glucosada clorurada 1.000 ml;55;;0;0;0;0;27;1
+B0530;13;Solución ringer lactato 1.000 ml;55;;0;0;0;0;27;1
+B0531;13;Solución ringer normal 500 ml;55;;0;0;0;0;27;1
+B0532;13;Solución ringer normal 1.000 ml;55;;0;0;0;0;27;1
+B0533;13;Sulfato de magnesio 10%;27;;0;0;0;0;27;1
+B0534;13;Levulosa;55;;0;0;0;0;27;1
+C0102;14;Amiodarona (clorhidrato) 200 mg;7;;0;0;0;0;27;1
+C0103;14;Amiodarona (clorhidrato) 50 mg/ml;27;;0;0;0;0;27;1
+C0104;14;Digoxina 0,75 mg/ml;52;;0;0;0;0;27;1
+C0105;14;Digoxina 0,25 mg/ml;27;;0;0;0;0;27;1
+C0106;14;Digoxina 0,25 mg;8;;0;0;0;0;27;1
+C0107;14;Dinitrato de isosorbida (Isosorbide dinitrato) 5 mg;10;;0;0;0;0;27;1
+C0108;14;Dobutamina clorhidrato 250 mg;27;;0;0;0;0;27;1
+C0109;14;Dopamina clorhidrato 200 mg;27;;0;0;0;0;27;1
+C0110;14;Epinefrina (Adrenalina) 1 mg/ml;27;;0;0;0;0;27;1
+C0111;14;Isosorbida Mononitrato 20 mg;7;;0;0;0;0;27;1
+C0113;14;Etilefrina 10 mg/ml;27;;0;0;0;0;27;1
+C0115;14;Noradrenalina  1 mg/ml;27;;0;0;0;0;27;1
+C0204;14;Metildopa (Alfametildopa) 500 mg;7;;0;0;0;0;27;1
+C0301;14;Acetazolamida 250 mg;7;;0;0;0;0;27;1
+C0302;14;Espironolactona 100 mg;7;;0;0;0;0;27;1
+C0304;14;Furosemida 40 mg;8;;0;0;0;0;27;1
+C0305;14;Furosemida 10 mg/ml;27;;0;0;0;0;27;1
+C0306;14;Hidroclorotiazida 50 mg;8;;0;0;0;0;27;1
+C0307;14;Hidroclorotiazida + Amilorida 50 mg + 5 mg;7;;0;0;0;0;27;1
+C0501;14;Corticoide + anestésico Según disponibilidad;57;;0;0;0;0;27;1
+C0502;14;Corticoide + anestésico Según disponibilidad;12;;0;0;0;0;27;1
+C0701;14;Atenolol 100 mg;8;;0;0;0;0;27;1
+C0702;14;Propranolol 40 mg;7;;0;0;0;0;27;1
+C0705;14;Carvedilol 12,5 mg;7;;0;0;0;0;27;1
+C0802;14;Nimodipina 30 mg;7;;0;0;0;0;27;1
+C0804;14;Verapamilo 80 mg;7;;0;0;0;0;27;1
+C0807;14;Amlodipina 10 mg;7;;0;0;0;0;27;1
+C0808;14;Nifedipino 10 mg;64;;0;0;0;0;27;1
+C0901;14;Enalapril maleato 10 mg;8;;0;0;0;0;27;1
+C0902;14;Losartan 50 mg;7;;0;0;0;0;27;1
+C1001;14;Atorvastatina 10 mg;7;;0;0;0;0;27;1
+C1002;14;Genfibrozilo 600 mg;7;;0;0;0;0;27;1
+D0102;15;Bacitracina + Neomicina sulfato 500 UI + 5 mg/g;12;;0;0;0;0;27;1
+D0103;15;Clotrimazol 1%;12;;0;0;0;0;27;1
+D0104;15;Nistatina 100.000 UI/g;12;;0;0;0;0;27;1
+D0106;15;Tolnaftato 1%;44;;0;0;0;0;27;1
+D0107;15;Violeta de genciana (Cloruro de metilrosanilina) 1%;44;;0;0;0;0;27;1
+D0202;15;Oxido de Zinc con o sin aceite Según disponibilidad;34;;0;0;0;0;27;1
+D0401;15;Lidocaína 2%;21;;0;0;0;0;27;1
+D0601;15;Resina de Podofilo (Podofilina) 10% o 25%;56;;0;0;0;0;27;1
+D0701;15;Betametasona (valerato) 0,1%;12;;0;0;0;0;27;1
+D0702;15;Clobetasol 0,05%;12;;0;0;0;0;27;1
+D0703;15;Clobetasol 0,05%;44;;0;0;0;0;27;1
+D0704;15;Hidrocortisona acetato 1%;12;;0;0;0;0;27;1
+D1001;15;Eritromicina 2% a 4%;31;;0;0;0;0;27;1
+D1003;15;Peróxido de Benzoílo 5%;16;;0;0;0;0;27;1
+D1004;15;Resorcinol 10%;12;;0;0;0;0;27;1
+D1101;15;Hidroquinona 4% o 5%;31;;0;0;0;0;27;1
+D1102;15;Hidroquinona 4% o 5 %;12;;0;0;0;0;27;1
+E0101;35;Alopurinol+benzobromarona 100/20mg;7;;0;0;0;0;27;1
+E0201;35;Bicalutamida 50 mg;7;;0;0;0;0;27;1
+E0301;35;Citalopran 20 mg;7;;0;0;0;0;27;1
+E0302;35;Cinitapride 1 mg;7;;0;0;0;0;27;1
+E0401;35;Deflazacort 30mg;7;;0;0;0;0;27;1
+E0701;35;Glucosamina+ condroitin sulfato 1500/1000mg ;43;;0;0;0;0;27;1
+E0702;35;Glimepirida 4 mg;7;;0;0;0;0;27;1
+E0801;35;Hidroxicloroquina 200 mg;7;;0;0;0;0;27;1
+E1202;35;Lamotrigine 200 mg;7;;0;0;0;0;27;1
+E1203;35;Lamotrigine 100mg;7;;0;0;0;0;27;1
+E1204;35;Leflunamida 20 mg;7;;0;0;0;0;27;1
+E1205;35;Lamotrigine 50 mg ;7;;0;0;0;0;27;1
+E1206;35;Acetato de leuprolide 7,5 mg;27;;0;0;0;0;27;1
+E1301;35;Mirtazapina 30 mg;7;;0;0;0;0;27;1
+E1302;35;Meropenem 500 mg. ;27;;0;0;0;0;27;1
+E1501;35;Olanzapina 5 mg;7;;0;0;0;0;27;1
+E1502;35;Oxibutinina 10 mg;7;;0;0;0;0;27;1
+E1601;35;Paroxetina 20 mg;7;;0;0;0;0;27;1
+E1701;35;Risperidona 1 mg;7;;0;0;0;0;27;1
+E1801;35;Sertralina 50 mg ;7;;0;0;0;0;27;1
+E1901;35;Tamsulosina 0.4mg ;7;;0;0;0;0;27;1
+E1902;35;Tolterodina 4 mg;7;;0;0;0;0;27;1
+E1903;35;Temozolamida 100 mg;7;;0;0;0;0;27;1
+E1904;35;Temozolamida 200 mg;7;;0;0;0;0;27;1
+E2018;35;Transtusumab 440mg;27;;0;0;0;0;27;1
+E2301;35;Venlafaxina 75mg ;7;;0;0;0;0;27;1
+G0101;16;Acido acetico (Acido tricloroacético) 0,5;56;;0;0;0;0;27;1
+G0102;16;Clotrimazol 100 mg;32;;0;0;0;0;27;1
+G0103;16;Clotrimazol 1%;15;;0;0;0;0;27;1
+G0104;16;Metronidazol 500 mg;32;;0;0;0;0;27;1
+G0105;16;Nistatina 100.000 UI;32;;0;0;0;0;27;1
+G0201;16;Bromocriptina 2,5 mg;7;;0;0;0;0;27;1
+G0202;16;Bromocriptina 5 mg;7;;0;0;0;0;27;1
+G0203;16;Ergometrina maleato 0,2 mg;7;;0;0;0;0;27;1
+G0204;16;Ergometrina maleato 0,2 mg/ml;27;;0;0;0;0;27;1
+G0205;16;Oxitocina 5 ui/ml;27;;0;0;0;0;27;1
+G0206;16;Ritodrina 10 mg;7;;0;0;0;0;27;1
+G0209;16;Oxitocina  5UI/ml o 10 UI/ml;27;;0;0;0;0;27;1
+G0301;16;Ciproterona acetato + Estradiol valerato 2 mg + 1mg;66;;0;0;0;0;27;1
+G0302;16;Ciproterona acetato + Estradiol valerato 0,035 mg + 2 mg;66;;0;0;0;0;27;1
+G0303;16;Clomifeno citrato 50 mg;7;;0;0;0;0;27;1
+G0304;16;Estradiol + Noretisterona acetato 2 mg + 1mg;66;;0;0;0;0;27;1
+G0305;16;Estradiol valerianato + Norgestrel 2 mg + 0,5 mg;66;;0;0;0;0;27;1
+G0306;16;Estradiol valerianato + Prasterona enantato 4 mg + 200 mg/ml;27;;0;0;0;0;27;1
+G0309;16;Estrogenos conjugados 0,625 mg;15;;0;0;0;0;27;1
+G0310;16;Gonadotrofina coriónica 5.000 UI/ml;27;;0;0;0;0;27;1
+G0312;16;Levonorgestrel + Etinilestradiol 0,150 mg + 0,03 mg;66;;0;0;0;0;27;1
+G0313;16;Medroxiprogesterona acetato 150 mg/ml;27;;0;0;0;0;27;1
+G0314;16;Medroxiprogesterona acetato 10 mg;7;;0;0;0;0;27;1
+G0401;16;Finasterida 5 mg;7;;0;0;0;0;27;1
+H0102;17;Desmopresina acetato 0,1 mg/ml;48;;0;0;0;0;27;1
+H0201;17;Betametasona (fosfato) 4 mg;27;;0;0;0;0;27;1
+H0203;17;Dexametasona 0,5 mg;7;;0;0;0;0;27;1
+H0204;17;Dexametasona 4 mg/ml;27;;0;0;0;0;27;1
+H0205;17;Hidrocortisona succinato sódico 100 mg;27;;0;0;0;0;27;1
+H0207;17;Metilprednisolona succinato sódico 500 mg;27;;0;0;0;0;27;1
+H0208;17;Prednisona 5 mg;7;;0;0;0;0;27;1
+H0209;17;Prednisona 20 mg;8;;0;0;0;0;27;1
+H0210;17;Prednisona 1 mg/ml;58;;0;0;0;0;27;1
+H0213;17;Betametasona (acetato fosfato) Según disponibilidad;27;;0;0;0;0;27;1
+H0301;17;Levotiroxina sódica 0,1 mg;8;;0;0;0;0;27;1
+H0302;17;Propiltiouracilo 50 mg;7;;0;0;0;0;27;1
+J0101;18;Acido nalidíxico 500 mg;7;;0;0;0;0;27;1
+J0102;18;Acido nalidíxico 250 mg/5 ml;58;;0;0;0;0;27;1
+J0104;18;Amikacina 500 mg/2 ml ;27;;0;0;0;0;27;1
+J0105;18;Amoxicilina 1 g;7;;0;0;0;0;27;1
+J0106;18;Amoxicilina 500 mg;7;;0;0;0;0;27;1
+J0108;18;Amoxicilina 1 g;27;;0;0;0;0;27;1
+J0109;18;Amoxicilina + inhibidor betalactamasa 500 mg +  Según disponibilidad;7;;0;0;0;0;27;1
+J0110;18;Amoxicilina + inhibidor betalactamasa 250 mg + Según disponibilidad;58;;0;0;0;0;27;1
+J0111;18;Amoxicilina + inhibidor betalactamasa 1 g + Según disponibilidad;27;;0;0;0;0;27;1
+J0112;18;Ampicilina 1 g;27;;0;0;0;0;27;1
+J0113;18;Azitromicina 500 mg;7;;0;0;0;0;27;1
+J0115;18;Bencilpenicilina benzatínica 1.200.000 UI;27;;0;0;0;0;27;1
+J0116;18;Bencilpenicilina benzatínica 2.400.000 UI;27;;0;0;0;0;27;1
+J0117;18;Bencilpenicilina procaínica 400.000 UI;27;;0;0;0;0;27;1
+J0118;18;Bencilpenicilina procaínica 800.000 UI;27;;0;0;0;0;27;1
+J0120;18;Bencilpenicilina sódica 30.000.000 UI;27;;0;0;0;0;27;1
+J0121;18;Cefazolina 1 g;27;;0;0;0;0;27;1
+J0122;18;Cefotaxima 1 g;27;;0;0;0;0;27;1
+J0123;18;Cefradina 500 mg;4;;0;0;0;0;27;1
+J0124;18;Cefradina 250 mg/5 ml;58;;0;0;0;0;27;1
+J0125;18;Ceftazidima 1 g;27;;0;0;0;0;27;1
+J0126;18;Ceftriaxona 1 g;27;;0;0;0;0;27;1
+J0127;18;Ciprofloxacina 500 mg;7;;0;0;0;0;27;1
+J0128;18;Ciprofloxacina 200 mg;27;;0;0;0;0;27;1
+J0129;18;Claritromicina 500 mg;7;;0;0;0;0;27;1
+J0130;18;Claritromicina 250 mg/5 ml;58;;0;0;0;0;27;1
+J0136;18;Cloxacilina 1 g;27;;0;0;0;0;27;1
+J0137;18;Cotrimoxazol (Sulfametoxazol + Trimetoprima) 800 mg + 160 mg;7;;0;0;0;0;27;1
+J0138;18;Cotrimoxazol (Sulfametoxazol + Trimetoprima) 200 mg + 40 mg/5 ml;58;;0;0;0;0;27;1
+J0140;18;Cotrimoxazol (Sulfametoxazol + Trimetoprima) 400 mg + 80 mg;7;;0;0;0;0;27;1
+J0141;18;Dicloxacilina sódica 500 mg;2;;0;0;0;0;27;1
+J0142;18;Dicloxacilina sódica 250 mg/5 ml;58;;0;0;0;0;27;1
+J0144;18;Doxiciclina 100 mg;4;;0;0;0;0;27;1
+J0145;18;Eritromicina estearato 500 mg;4;;0;0;0;0;27;1
+J0146;18;Eritromicina etilsuccinato 250 mg/5 ml;58;;0;0;0;0;27;1
+J0149;18;Gentamicina sulfato 80 mg;27;;0;0;0;0;27;1
+J0150;18;Imipenem + Cilastatina 500 mg + 500 mg;27;;0;0;0;0;27;1
+J0151;18;Nitrofurantoína 100 mg;7;;0;0;0;0;27;1
+J0152;18;Nitrofurantoína 25 mg/5 ml;58;;0;0;0;0;27;1
+J0154;18;Tetraciclina 500 mg;4;;0;0;0;0;27;1
+J0155;18;Vancomicina 500 mg;27;;0;0;0;0;27;1
+J0156;18;Clindamicina 300 mg;7;;0;0;0;0;27;1
+J0157;18;Amoxicilina 500 mg/5 ml;58;;0;0;0;0;27;1
+J0158;18;Cefixima 400 mg;64;;0;0;0;0;27;1
+J0162;18;Azitromicina 200 mg/5 ml;58;;0;0;0;0;27;1
+J0163;18;Cefixima 100 mg/5 ml;58;;0;0;0;0;27;1
+J0164;18;Clindamicina 600 mg;27;;0;0;0;0;27;1
+J0165;18;Cotrimoxazol (Sulfametoxazol + Trimetoprima) 400 mg + 80 mg/5 ml;58;;0;0;0;0;27;1
+J0166;18;Levofloxacina 500 mg;7;;0;0;0;0;27;1
+J0202;18;Fluconazol 200 mg;27;;0;0;0;0;27;1
+J0203;18;Fluconazol 200 mg.;7;;0;0;0;0;27;1
+J0206;18;ketoconazol 200 mg.;7;;0;0;0;0;27;1
+J0208;18;Fluconazol 150 mg;4;;0;0;0;0;27;1
+J0503;18;Aciclovir 200 mg.;7;;0;0;0;0;27;1
+J0504;18;Aciclovir 400 mg;7;;0;0;0;0;27;1
+J0603;18;Inmunoglobulina humana normal 5 g IV;27;;0;0;0;0;27;1
+J0701;18;Toxoide tetanico adsorbido 120 UI/ml;27;;0;0;0;0;27;1
+L0101;19;Bleomicina 15 UI;27;;0;0;0;0;27;1
+L0103;19;Capecitabine 500 mg;7;;0;0;0;0;27;1
+L0106;19;Ciclofosfamida 1 g;27;;0;0;0;0;27;1
+L0109;19;Cisplatino 50 mg;27;;0;0;0;0;27;1
+L0115;19;Doxorubicina clorhidrato (Adriamicina clorh.) 50 mg;27;;0;0;0;0;27;1
+L0116;19;Etopósido 100 mg/5 ml;27;;0;0;0;0;27;1
+L0117;19;Fluorouracilo 500 mg/10 ml;27;;0;0;0;0;27;1
+L0118;19;Gemcitabina 1 g;27;;0;0;0;0;27;1
+L0119;19;Hidroxiurea 500 mg;2;;0;0;0;0;27;1
+L0120;19;Ifosfamida 1 g;27;;0;0;0;0;27;1
+L0124;19;Metotrexato 50 mg;27;;0;0;0;0;27;1
+L0126;19;Metotrexato 2,5 mg;7;;0;0;0;0;27;1
+L0128;19;Paclitaxel 30 mg/5 ml;27;;0;0;0;0;27;1
+L0132;19;Carboplatino 150 mg;27;;0;0;0;0;27;1
+L0134;19;Oxaliplatino 50 mg;27;;0;0;0;0;27;1
+L0135;19;Oxaliplatino 100 mg;27;;0;0;0;0;27;1
+L0138;19;Docetaxel 40 mg/ml (2ml);27;;0;0;0;0;27;1
+L0201;19;Anastrozol 1 mg;7;;0;0;0;0;27;1
+L0202;19;Ciproterona (acetato) 50 mg;7;;0;0;0;0;27;1
+L0203;19;Flutamida 250 mg;7;;0;0;0;0;27;1
+L0205;19;Tamoxifeno 20 mg;7;;0;0;0;0;27;1
+L0207;19;Triptorelina 11,25 mg;27;;0;0;0;0;27;1
+L0301;19;Filgrastrim 300 mcg/ml;27;;0;0;0;0;27;1
+L0302;19;Interferon alfa 2 b recombinante 10.000.000 UI con diluyente (1 ml);27;;0;0;0;0;27;1
+L0304;19;Interferon beta 0,3 mg;27;;0;0;0;0;27;1
+L0401;19;Azatioprina 50 mg;7;;0;0;0;0;27;1
+L0403;19;Ciclosporina 100 mg/ml;51;;0;0;0;0;27;1
+L0407;19;Micofenolato de mofetilo 500 mg;7;;0;0;0;0;27;1
+L0410;19;Tacrolimus 1 mg;2;;0;0;0;0;27;1
+M0101;20;Diclofenaco sódico 1%;42;;0;0;0;0;27;1
+M0102;20;Diclofenaco sódico 50 mg;7;;0;0;0;0;27;1
+M0103;20;Diclofenaco sódico 75 mg;27;;0;0;0;0;27;1
+M0104;20;Ibuprofeno 100 mg/5 ml;58;;0;0;0;0;27;1
+M0105;20;Ibuprofeno 400 mg;7;;0;0;0;0;27;1
+M0106;20;Indometacina 25 mg;4;;0;0;0;0;27;1
+M0107;20;Indometacina 100 mg;57;;0;0;0;0;27;1
+M0109;20;Ketorolaco 30 mg/ml;27;;0;0;0;0;27;1
+M0301;20;Atracurio besilato 10 mg/ml;27;;0;0;0;0;27;1
+M0303;20;Rocuronio bromuro 10 mg/ml;27;;0;0;0;0;27;1
+M0304;20;Suxametonio (Succinil colina) 500 mg;27;;0;0;0;0;27;1
+M0401;20;Alopurinol 300 mg;7;;0;0;0;0;27;1
+M0402;20;Colchicina 0,5 mg;7;;0;0;0;0;27;1
+M0503;20;Acido Alendrónico (Alendronato) 70 mg;7;;0;0;0;0;27;1
+N0101;21;Bupivacaina clorhidrato 0,5%;27;;0;0;0;0;27;1
+N0102;21;Bupivacaina clorhidrato (pesada) 0,5%;27;;0;0;0;0;27;1
+N0103;21;Bupivacaina clorhidrato con Epinefrina sin conservante 0,5% 1 : 200.000;27;;0;0;0;0;27;1
+N0105;21;Fentanilo con conservante 0,05 mg/ml;27;;0;0;0;0;27;1
+N0107;21;Halotano 0,01% de timol;44;;0;0;0;0;27;1
+N0108;21;Ketamina (Cetamina) 50 mg/ml;27;;0;0;0;0;27;1
+N0110;21;Lidocaina clorhidrato + Epinefrina 2% 1 : 200.000;27;;0;0;0;0;27;1
+N0112;21;Lidocaina clorhidrato sin conservante 2%;27;;0;0;0;0;27;1
+N0113;21;Propofol 10 mg/ml;27;;0;0;0;0;27;1
+N0114;21;Sevoflurano (Trifluorometil etil) 250 ml;44;;0;0;0;0;27;1
+N0115;21;Tiopental sódico 1 g;27;;0;0;0;0;27;1
+N0116;21;Remifentanilo 5 mg;27;;0;0;0;0;27;1
+N0201;21;Acido acetil salicílico 500 mg;7;;0;0;0;0;27;1
+N0203;21;Ergotamina tartrato + Cafeina 1 mg + 100 mg;7;;0;0;0;0;27;1
+N0205;21;Metamizol (Dipirona) 1 g;27;;0;0;0;0;27;1
+N0206;21;Morfina 10 mg;4;;0;0;0;0;27;1
+N0207;21;Morfina (con y sin conservante) 10 mg/ml;27;;0;0;0;0;27;1
+N0208;21;Paracetamol (Acetaminofeno) 500 mg;7;;0;0;0;0;27;1
+N0209;21;Paracetamol (Acetaminofeno) 125 mg/5 ml o 120 mg/5 ml;28;;0;0;0;0;27;1
+N0210;21;Paracetamol (Acetaminofeno) 100 mg/ml;23;;0;0;0;0;27;1
+N0214;21;Tramadol  100 mg/2 ml;27;;0;0;0;0;27;1
+N0215;21;Tramadol 50 mg;7;;0;0;0;0;27;1
+N0301;21;Acido Valpróico ó Valproato sódico 200 mg/5 ml;29;;0;0;0;0;27;1
+N0303;21;Acido Valpróico ó Valproato sódico 500 mg;4;;0;0;0;0;27;1
+N0304;21;Carbamazepina 200 mg;7;;0;0;0;0;27;1
+N0306;21;Clonazepam 2 mg;8;;0;0;0;0;27;1
+N0307;21;Fenitoína 50 mg/ml;27;;0;0;0;0;27;1
+N0308;21;Fenitoína 100 mg;4;;0;0;0;0;27;1
+N0309;21;Fenobarbital 100 mg;7;;0;0;0;0;27;1
+N0310;21;Fenobarbital 20 mg/ml;23;;0;0;0;0;27;1
+N0311;21;Fenobarbital 100 mg/ml;27;;0;0;0;0;27;1
+N0312;21;Clonazepam 2,5 mg/ml;51;;0;0;0;0;27;1
+N0313;21;Gabapentina 300 mg;64;;0;0;0;0;27;1
+N0401;21;Biperideno clorhidrato 4 mg;7;;0;0;0;0;27;1
+N0402;21;Levodopa + Carbidopa 250 mg + 25 mg;7;;0;0;0;0;27;1
+N0501;21;Alprazolam 0,5 mg;8;;0;0;0;0;27;1
+N0502;21;Clorpromazina 100 mg;7;;0;0;0;0;27;1
+N0504;21;Diazepam 10 mg;8;;0;0;0;0;27;1
+N0505;21;Diazepam 10 mg;27;;0;0;0;0;27;1
+N0507;21;Haloperidol 2 mg/ml;51;;0;0;0;0;27;1
+N0508;21;Haloperidol 5 mg;7;;0;0;0;0;27;1
+N0509;21;Haloperidol decanoato 50 mg/ml;27;;0;0;0;0;27;1
+N0511;21;Midazolam 15 mg/3 ml;27;;0;0;0;0;27;1
+N0512;21;Risperidona 3 mg;7;;0;0;0;0;27;1
+N0601;21;Amitriptilina 25 mg;8;;0;0;0;0;27;1
+N0604;21;Fluoxetina 20 mg;4;;0;0;0;0;27;1
+N0605;21;Imipramina clorhidrato 25 mg;7;;0;0;0;0;27;1
+N0606;21;Metilfenidato 10 mg;7;;0;0;0;0;27;1
+N0701;21;Dimenhidrinato 50 mg;7;;0;0;0;0;27;1
+N0704;21;Disulfiram 250 mg o 500 mg;7;;0;0;0;0;27;1
+N0705;21;Neostigmina 0,5 mg/ml;27;;0;0;0;0;27;1
+P0103;22;Cloroquina fosfato 250 mg (150 mg base);7;;0;0;0;0;27;1
+P0106;22;Metronidazol 250 mg/5 ml;58;;0;0;0;0;27;1
+P0107;22;Metronidazol 500 mg;27;;0;0;0;0;27;1
+P0109;22;Metronidazol 500 mg;7;;0;0;0;0;27;1
+P0111;22;Nitazoxanida 500 mg;7;;0;0;0;0;27;1
+P0201;22;Albendazol 200 mg;7;;0;0;0;0;27;1
+P0208;22;Pirantel pamoato 250 mg/5 ml;58;;0;0;0;0;27;1
+P0301;22;Benzoato de bencilo 20% o 25%;49;;0;0;0;0;27;1
+R0303;23;Beclometasona dipropionato 50 mcg/inhalación;1;;0;0;0;0;27;1
+R0304;23;Salbutamol 5 mg/ml;54;;0;0;0;0;27;1
+R0305;23;Salbutamol 4 mg;7;;0;0;0;0;27;1
+R0306;23;Salbutamol 0,1 mg/inhalación;1;;0;0;0;0;27;1
+R0308;23;Teofilina 300 mg;7;;0;0;0;0;27;1
+R0309;23;Ipratropio bromuro 20 mcg/dosis;1;;0;0;0;0;27;1
+R0311;23;Salmeterol + Fluticasona 25 mcg + 125 mcg;1;;0;0;0;0;27;1
+R0501;23;Antigripal (Paracetamol + Antihistamínico + Vasoconstrictor con o sin Cafeina) Según disponibilidad;7;;0;0;0;0;27;1
+R0502;23;Codeína 10 mg/5 ml;28;;0;0;0;0;27;1
+R0503;23;Dextrometorfano bromhidrato 10 mg/5 ml;28;;0;0;0;0;27;1
+R0601;23;Clorfenamina (Clorfeniramina) 4 mg;7;;0;0;0;0;27;1
+R0602;23;Clorfenamina (Clorfeniramina) 2 mg/5 ml;28;;0;0;0;0;27;1
+R0603;23;Clorfenamina (Clorfeniramina) 10 mg/ml;27;;0;0;0;0;27;1
+R0604;23;Ketotifeno 1 mg;7;;0;0;0;0;27;1
+R0607;23;Cetirizina 10 mg;64;;0;0;0;0;27;1
+R0608;23;Cetirizina 5 mg/5 ml;28;;0;0;0;0;27;1
+S0101;24;Aciclovir 3%;14;;0;0;0;0;27;1
+S0102;24;Atropina sulfato 0,01;50;;0;0;0;0;27;1
+S0104;24;Ciprofloxacina 0,3%;50;;0;0;0;0;27;1
+S0105;24;Cloranfenicol 0,5%;50;;0;0;0;0;27;1
+S0106;24;Cloranfenicol 1%;63;;0;0;0;0;27;1
+S0109;24;Dexametasona 0,1%;50;;0;0;0;0;27;1
+S0111;24;Diclofenaco sódico 0,1%;50;;0;0;0;0;27;1
+S0112;24;Dorzolamida 2%;50;;0;0;0;0;27;1
+S0115;24;Gentamicina 0,3%;63;;0;0;0;0;27;1
+S0116;24;Gentamicina 0,3%;50;;0;0;0;0;27;1
+S0118;24;Lagrimas artificiales 0,3% o 1%;50;;0;0;0;0;27;1
+S0119;24;Nafazolina clorhidrato 0,1%;50;;0;0;0;0;27;1
+S0120;24;Proximetacaina (Proparacaina) 0,5%;50;;0;0;0;0;27;1
+S0121;24;Solución Fisiológica 0,9% (15 a 30 ml);48;;0;0;0;0;27;1
+S0122;24;Timolol maleato 0,5%;50;;0;0;0;0;27;1
+S0123;24;Tropicamida 0,01;50;;0;0;0;0;27;1
+S0124;24;Corticoide + antiinfeccioso de accion tópica Según disponibilidad;50;;0;0;0;0;27;1
+S0125;24;Corticoide + antiinfeccioso de accion tópica Según disponibilidad;63;;0;0;0;0;27;1
+S0126;24;Lagrimas artificiales 0,3% o 1%;20;;0;0;0;0;27;1
+S0127;24;Latanoprost 50 mcg/ml;50;;0;0;0;0;27;1
+S0201;24;Glicerina + carbonato de sodio Según disponibilidad;24;;0;0;0;0;27;1
+V0301;25;Acetil Cisteina 10%;27;;0;0;0;0;27;1
+V0305;25;Flumazenil 0,5 mg/5 ml;27;;0;0;0;0;27;1
+V0307;25;Leucovorina 50 mg;27;;0;0;0;0;27;1
+V0308;25;Mesna (Mercapto etilsulfonato sódico) 400 mg;27;;0;0;0;0;27;1
+V0601;25;Proteinas para alimentación enteral (alimento) Según disponibilidad;35;;0;0;0;0;27;1
+V0602;25;Alimentos Terapéutico Listo para Uso (ATLU) Según concentración standard ;41;;0;0;0;0;27;1
+V0604;25;Complemento Nutricional (Carmelo) ;35;;0;0;0;0;27;1
+V0802;25;Contraste iodado Según disponibilidad (50 ml);27;;0;0;0;0;27;1
+V0806;25;Meglumina diatrizoato 70% o 76% (20 ml);27;;0;0;0;0;27;1
+V0807;25;Meglumina diatrizoato 70% o 76% (50 ml);27;;0;0;0;0;27;1
+V0808;25;Sulfato de bario Según disponibilidad;58;;0;0;0;0;27;1
+V0809;25;Sulfato de bario Según disponibilidad;38;;0;0;0;0;27;1
+A0305;12;Butilbromuro de Hioscina (Butilescopolamina) 10 mg;57;;0;0;0;0;27;1
+A0603;12;Bisacodilo 10 mg;57;;0;0;0;0;27;1
+A0605;12;Glicerol (Glicerina) 2 g a 4 g (adulto);57;;0;0;0;0;27;1
+A1101;12;Aceite vitaminado (alimento) Según disponibilidad;18;;0;0;0;0;27;1
+B0102;13;Estreptoquinasa 1.500.000 UI;27;;0;0;0;0;27;1
+B0201;13;Acido aminocapróico 50 mg/ml (5 ml);27;;0;0;0;0;27;1
+B0508;13;Dextran 70 0,06;55;;0;0;0;0;27;1
+B0529;13;Solución ringer lactato 500 ml;55;;0;0;0;0;27;1
+C0112;14;Nitroglicerina (Trinitrato de glicerol) 5 mg/ml;27;;0;0;0;0;27;1
+C0803;14;Nimodipina 0,2 mg/ml;27;;0;0;0;0;27;1
+C0806;14;Verapamilo 40 mg;7;;0;0;0;0;27;1
+D0101;15;Acido salicílico 0,05;56;;0;0;0;0;27;1
+D0203;15;Ungüento dérmico eucalipto mentol Según disponibilidad;61;;0;0;0;0;27;1
+D0602;15;Sulfadiazina de plata 0,01;12;;0;0;0;0;27;1
+D1002;15;Peróxido de Benzoílo 0,05;31;;0;0;0;0;27;1
+E0102;35;Abiroterona 250 mg;7;;0;0;0;0;27;1
+E0802;35;Hialuronico acido;27;;0;0;0;0;27;1
+E0901;35;Ibandronato 150 mg ;7;;0;0;0;0;27;1
+E1201;35;levodopa+benzerazina 250/200mg;7;;0;0;0;0;27;1
+E1503;35;Oxicodona 10 mg;7;;0;0;0;0;27;1
+E2201;35;Zolpiden 10 mg;7;;0;0;0;0;27;1
+E2202;35;Aciddo Zeledronico 4 mg;27;;0;0;0;0;27;1
+G0207;16;Ritodrina 10 mg/ml;27;;0;0;0;0;27;1
+G0208;16;Misoprostol 25 mcg;11;;0;0;0;0;27;1
+G0307;16;Estrogenos conjugados 0,625 mg;7;;0;0;0;0;27;1
+G0316;16;Norgestrel + Etinilestradiol 0,3 mg + 0,03 mg ó 0,5 mg + 0,05 mg;7;;0;0;0;0;27;1
+G0318;16;Testosterona undecanoato 1000 mg;27;;0;0;0;0;27;1
+H0101;17;Corticotrofina (ACTH) 25 UI o 40 UI;27;;0;0;0;0;27;1
+H0206;17;Hidrocortisona succinato sódico 250 mg;27;;0;0;0;0;27;1
+J0119;18;Bencilpenicilina sódica 1.000.000 UI;27;;0;0;0;0;27;1
+J0133;18;Cloranfenicol succinato sódico 1 g;27;;0;0;0;0;27;1
+J0134;18;Cloxacilina 500 mg;27;;0;0;0;0;27;1
+J0147;18;Espiramicina 500 mg;7;;0;0;0;0;27;1
+J0148;18;Gentamicina sulfato 20 mg;27;;0;0;0;0;27;1
+J0153;18;Ofloxacina 400 mg;7;;0;0;0;0;27;1
+J0161;18;Ciprofloxacina 250 mg;7;;0;0;0;0;27;1
+J0201;18;Amfotericina B 50 mg;27;;0;0;0;0;27;1
+J0204;18;Griseofulvina 500 mg;7;;0;0;0;0;27;1
+J0205;18;Griseofulvina 125 mg/5 ml;58;;0;0;0;0;27;1
+J0412;18;Capreomicina 1 g;27;;0;0;0;0;27;1
+J0413;18;Kanamicina 1 g;27;;0;0;0;0;27;1
+J0602;18;Inmunoglobulina anti D (RH +) 0,1 mg/ml a 0,2 mg/ml;27;;0;0;0;0;27;1
+J0604;18;Suero antiofidico polivalente 10 ml;27;;0;0;0;0;27;1
+J0605;18;Suero antirrabico humano heterologo Según disponibilidad;27;;0;0;0;0;27;1
+L0104;19;Carboplatino 450 mg;27;;0;0;0;0;27;1
+L0105;19;Ciclofosfamida 500 mg;27;;0;0;0;0;27;1
+L0121;19;Asparaginasa 10.000 UI;27;;0;0;0;0;27;1
+L0122;19;Melfalan 2 mg;7;;0;0;0;0;27;1
+L0127;19;Mitomicina 20 mg;27;;0;0;0;0;27;1
+L0130;19;Vincristina 1 mg/ml;27;;0;0;0;0;27;1
+L0131;19;Vinorelbina 50 mg;27;;0;0;0;0;27;1
+L0133;19;Gemcitabine 200 mg;27;;0;0;0;0;27;1
+L0136;19;Bevacizumab 100 mg;27;;0;0;0;0;27;1
+L0204;19;Letrozol 2,5 mg;7;;0;0;0;0;27;1
+L0206;19;Triptorelina 3,75 mg;27;;0;0;0;0;27;1
+L0402;19;Azatioprina 20 mg/ml;27;;0;0;0;0;27;1
+L0404;19;Ciclosporina 100 mg;3;;0;0;0;0;27;1
+N0104;21;Droperidol 2,5 mg/ml;27;;0;0;0;0;27;1
+N0202;21;Codeína 30 mg;7;;0;0;0;0;27;1
+N0204;21;Metadona 5 mg;7;;0;0;0;0;27;1
+N0211;21;Paracetamol (Acetaminofeno) 100 mg;57;;0;0;0;0;27;1
+N0213;21;Petidina (Meperidina) 100 mg;27;;0;0;0;0;27;1
+N0302;21;Acido Valpróico ó Valproato sódico 250 mg/5 ml;29;;0;0;0;0;27;1
+N0503;21;Clorpromazina 12,5 mg/ml;27;;0;0;0;0;27;1
+N0513;21;Tioridazina 100 mg/5 ml;58;;0;0;0;0;27;1
+N0514;21;Tioridazina 100 mg;7;;0;0;0;0;27;1
+N0602;21;Clomipramina 75 mg;7;;0;0;0;0;27;1
+N0603;21;Clomipramina (clorhidrato) 25 mg/2 ml;27;;0;0;0;0;27;1
+N0702;21;Dimenhidrinato 50 mg;57;;0;0;0;0;27;1
+N0703;21;Dimenhidrinato 50 mg/ml;27;;0;0;0;0;27;1
+P0110;22;Nifurtimox 120 mg;7;;0;0;0;0;27;1
+P0114;22;Pirimetamina 25 mg;7;;0;0;0;0;27;1
+P0202;22;Albendazol 200 mg/5 ml;58;;0;0;0;0;27;1
+P0203;22;Mebendazol 100 mg;7;;0;0;0;0;27;1
+P0204;22;Mebendazol 100 mg/5 ml;58;;0;0;0;0;27;1
+P0205;22;Mebendazol 500 mg;7;;0;0;0;0;27;1
+P0206;22;Niclosamida 500 mg;7;;0;0;0;0;27;1
+P0207;22;Pirantel pamoato 250 mg;7;;0;0;0;0;27;1
+P0211;22;Tiabendazol 500 mg/5 ml;58;;0;0;0;0;27;1
+P0302;22;Permetrina 0,01;31;;0;0;0;0;27;1
+P0303;22;Permetrina 0,05;12;;0;0;0;0;27;1
+R0301;23;Aminofilina 255 mg/10 ml;27;;0;0;0;0;27;1
+R0701;23;Surfactante pulmonar 25 a 30 mg/ml;27;;0;0;0;0;27;1
+S0103;24;Ciclosporina 0,1%;50;;0;0;0;0;27;1
+S0113;24;Fluoresceina 0,1;27;;0;0;0;0;27;1
+S0114;24;Fluoresceina (sal sódica) 0,25%;50;;0;0;0;0;27;1
+S0117;24;Ketotifeno 0,25 mg/ml;50;;0;0;0;0;27;1
+V0309;25;Naloxona 0,4 mg/ml;27;;0;0;0;0;27;1
+W0500.27;26;Agujas espinales Nro 27;65;;0;0;0;0;27;1
+W1200;26;Tubo endotraqueal dif Nro 7.5;65;;0;0;0;0;27;1
+W1300;26;Kitt de Anestecia Peridural;65;;0;0;0;0;27;1
+X0302.3;26;Cateter venoso central triple via;65;;0;0;0;0;27;1
+X3001;26;Regulador de presion para infusion;65;;0;0;0;0;27;1
+X3002;26;Bolsa y equipo para alimentacion parenteral;65;;0;0;0;0;27;1
+X3003;26;Equipo foto sensible ;65;;0;0;0;0;27;1
+X3004;26;Dispositivo para transferencia de fluidos;65;;0;0;0;0;27;1
+X3041;26;Algodon 200 gr.;65;;0;0;0;0;27;1
+X3042;26;Algodon 100 gr.;65;;0;0;0;0;27;1
+X3046;26;Agujas p.fist hemodialisis roja y azul;65;;0;0;0;0;27;1
+X3048;26;Bolsa colectora de orina p/ adulto;65;;0;0;0;0;27;1
+X3050.4;26;Catgutt simple Nro. 4;43;;0;0;0;0;27;1
+X3050.1;26;Catgutt simple N°1;43;;0;0;0;0;27;1
+X3050.2;26;Catgutt simple N°2/0;43;;0;0;0;0;27;1
+X3051.0;26;Catgutt cromado N°0;43;;0;0;0;0;27;1
+X3051.1;26;Catgutt cromado N°1;43;;0;0;0;0;27;1
+X3051.3;26;Catgutt cromado N°3/0;43;;0;0;0;0;27;1
+X3052;26;Dexon c. aguja difte  Nro. 0;43;;0;0;0;0;27;1
+X3052.1;26;Dexon N°1;43;;0;0;0;0;27;1
+X3052.2;26;Dexon N°2/0;43;;0;0;0;0;27;1
+X3052.3;26;Dexon N°3/0;43;;0;0;0;0;27;1
+X3052.4;26;Dexon N°4/0;43;;0;0;0;0;27;1
+X3093;26;Tubo nasotraqueal espiralados dif. Nro;65;;0;0;0;0;27;1
+X3054;26;Electrodos adulto;65;;0;0;0;0;27;1
+X3056;26;Filtro polisulfona p/ hemodialisis F.7 -8;65;;0;0;0;0;27;1
+X3064;26;Mononylon 10/0 oftalmico con aguja;65;;0;0;0;0;27;1
+X3065;26;Seda negra 8/0 oftalmico con aguja;65;;0;0;0;0;27;1
+X3068.0;26;Mononylón difte Nro. 0;65;;0;0;0;0;27;1
+X3068.1;26;Mononylon N°1;65;;0;0;0;0;27;1
+X3068.2;26;Mononylon N°2/0;65;;0;0;0;0;27;1
+X3068.3;26;Mononylon N°3/0;65;;0;0;0;0;27;1
+X3068.4;26;Mononylon N°4/0;65;;0;0;0;0;27;1
+X3068.5;26;Mononylon N°5/0;65;;0;0;0;0;27;1
+X3068.6;26;Mononylon N°6/0;65;;0;0;0;0;27;1
+X3070;26;Jeringas 60-50ml;65;;0;0;0;0;27;1
+X3071;26;Jeringas p/ insulina descart.;65;;0;0;0;0;27;1
+X3072XX;26;LLave de tres vias;65;;0;0;0;0;27;1
+X3072.1;26;LLave de tres vias sin alargador;65;;0;0;0;0;27;1
+X3072.2;26;LLave de tres vias con alargador;65;;0;0;0;0;27;1
+X3075;26;Microgotero rigido descart.;65;;0;0;0;0;27;1
+X3080;26;Pinza umbilical descart.;65;;0;0;0;0;27;1
+X3081.0;26;Prolene Nro 0;43;;0;0;0;0;27;1
+X3082;26;Seda con aguja dif. Nro 0;43;;0;0;0;0;27;1
+X3082.1;26;Seda con aguja Nro 1/0;43;;0;0;0;0;27;1
+X3082.2;26;Seda con aguja Nro 2/0;43;;0;0;0;0;27;1
+X3082.3;26;Seda con aguja Nro 3/0;43;;0;0;0;0;27;1
+X3083;26;Set. arterio - venoso p/HDL;65;;0;0;0;0;27;1
+X3084.14;26;Sonda foley doble via Nro14;65;;0;0;0;0;27;1
+X3084.16;26;Sonda foley doble via Nro16;65;;0;0;0;0;27;1
+X3084.18;26;Sonda foley doble via Nro18;65;;0;0;0;0;27;1
+X3086;26;Sonda N. gast. infantil ;65;;0;0;0;0;27;1
+X3087.10;26;sonda N. gast. p. adulto  Nº 10;65;;0;0;0;0;27;1
+X3095;26;Vendas de yeso de 20 cm.;65;;0;0;0;0;27;1
+X3097;26;Venocatt, branulas Nro.;65;;0;0;0;0;27;1
+X3097.14;26;Venocatt, branulas Nro 14;65;;0;0;0;0;27;1
+X3097.16;26;Venocatt, branulas Nro 16;65;;0;0;0;0;27;1
+X3097.18;26;Venocatt, branulas Nro 18;65;;0;0;0;0;27;1
+X3097.20;26;Venocatt, branulas Nro. 20 ;65;;0;0;0;0;27;1
+X3098;26;Sonda aspiracion;65;;0;0;0;0;27;1
+X3099;26;Equipo para bomba de infusion;65;;0;0;0;0;27;1
+X3044;26;Alitas descartables Nro 22;65;;0;0;0;0;27;1
+X3053;26;Equipo venoclisis descartab.;65;;0;0;0;0;27;1
+X3070.3;26;Jeringas descartables 3ml;65;;0;0;0;0;27;1
+X3070.5;26;Jeringas descartables 5ml;65;;0;0;0;0;27;1
+X3070.10;26;Jeringas descartables 10ml;65;;0;0;0;0;27;1
+X3070.20;26;Jeringas descartables 20ml;65;;0;0;0;0;27;1
+X3097.22;26;Venocatt branulas Nro 22;65;;0;0;0;0;27;1
+X3097.24;26;Venocatt, branulas Nro. 24;65;;0;0;0;0;27;1
+C0706;14;Biosoprolol 5 mg;7;;0;0;0;0;27;1
+X3050.3;26;Catgutt simple N° 3/0;43;;0;0;0;0;27;1
+X3050.0;26;Catgutt simple N°0;43;;0;0;0;0;27;1
+X3070.50;26;Jeringas descartables 50ml;65;;0;0;0;0;27;1
+X3081.1;26;Prolene Nro 1;65;;0;0;0;0;27;1
+X3081.2;26;Prolene Nro 2/0;65;;0;0;0;0;27;1
+X3081.3;26;Prolene Nro 3/0;65;;0;0;0;0;27;1
+X3087.12;26;sonda N. gast. p. adulto  Nº 12;65;;0;0;0;0;27;1
+X3087.14;26;sonda N. gast. p. adulto  Nº 14;65;;0;0;0;0;27;1
+X3053;26;Equipo venoclisis;65;;0;0;0;0;27;1
+X3102;26;Tapón heparinizado;65;;0;0;0;0;27;1
+X3101;26;Sonda de alimentación enteral 14 FR adulto;65;;0;0;0;0;27;1
+W1400;26;Kitt de Anestesia Epidural;65;;0;0;0;0;27;1
+X3092;26;sonda T Dif. Nº 16;65;;0;0;0;0;27;1
+E1207;35;Levetirasetam 1gr;7;;0;0;0;0;27;1
+X3051.2;26;Catgutt cromado N°2/0;43;;0;0;0;0;27;1
+X3057;26;Drenaje toraxico dif N°;65;;0;0;0;0;27;1
+X3085;26;sonda foley trple via difte. Nº;65;;0;0;0;0;27;1
+X3091;26;Sonda Rectal;65;;0;0;0;0;27;1
+X3051.4;26;Catgutt cromado Nº 4/0;43;;0;0;0;0;27;1
+X3052.0;26;Dexon Nº 0;43;;0;0;0;0;27;1
+W0500.26;26;Agujas espinales Nro 26;65;;0;0;0;0;27;1
+X0302.2;26;Cateter venoso central doble via;65;;0;0;0;0;27;1
+W1200.7;26;Tubo endotraqueal Nº 7;65;;0;0;0;0;27;1
+X3052.5;26;Dexon N° 5;43;;0;0;0;0;27;1
+X3098.14;26;Sonda aspiracion Nº 14;65;;0;0;0;0;27;1
+X3098.16;26;Sonda aspiracion Nº 16;65;;0;0;0;0;27;1
+X3082.4;26;Seda con aguja Nº 4/0;43;;0;0;0;0;27;1
+W1200.6.5;26;Tubo endotraqueal nº 6.5;65;;0;0;0;0;27;1
+W1200.7.5;26;Tubo endotraqueal Nº 7.5;65;;0;0;0;0;27;1
+X3087.16;26;Sonda N. gas.p/adulto Nº16;65;;0;0;0;0;27;1
+X3087.18;26;Sonda N. gas- p/adulto Nº 18;65;;0;0;0;0;27;1
+E1905;35;Tamsulosina+ Dutasterida 0,4mg+0,5mg;7;;0;0;0;0;27;1
+W0500.25;26;Agujas espinales Nº 25;65;;0;0;0;0;27;1
+X3105.4;26;Mascara laringea Nº 4;65;;0;0;0;0;27;1
+X3105.5;26;Mascara laringea Nº 5;65;;0;0;0;0;27;1
+X3106.5;26;Canulas de mayo Nº 5;65;;0;0;0;0;27;1
+X3106.6;26;Canulas de mayo Nº 6;65;;0;0;0;0;27;1
+X3105.1;26;Mascara laringea Nº 1;65;;0;0;0;0;27;1
+X3105.2;26;Mascara laringea Nº 2;65;;0;0;0;0;27;1
+X3105.6;26;Mascara laringea Nº 6;65;;0;0;0;0;27;1
+W1200.5;26;Tubo endotraqueal Nº 5;65;;0;0;0;0;27;1
+W1200.5.5;26;Tubo endotraqueal Nº 5.5;65;;0;0;0;0;27;1
+W1200.6;26;Tubo endotraqueal Nº 6;65;;0;0;0;0;27;1
+X0301;26;Cateter venoso central ;65;;0;0;0;0;27;1
+N0316X;21;lamotrigine 200 mg ;7;;0;0;0;0;27;1
+P0127;22;Hidroxicloroquina Sulfato 200 mg;7;;0;0;0;0;27;1
+G0211;16;Cabergolina 0,5 mg.;7;;0;0;0;0;27;1
+L0141;19;Rituximab  500 mg./50 ml;27;;0;0;0;0;27;1
+X3081.4;26;Prolene Nro 4/0;65;;0;0;0;0;27;1
+L0142;19;Trastuzumab 440 mg ;27;;0;0;0;0;27;1
+L0412;19;Leflunomida 20mg;7;;0;0;0;0;27;1
+N0314X;21;Lamotrigine 50mg   ;7;;0;0;0;0;27;1
+J0167;18;Colistina 100mg;27;;0;0;0;0;27;1
+J0168;18;Levofloxacina 500mg;27;;0;0;0;0;27;1
+X3099.1;26;Equipo para bomba de infusión con Deposito;65;;0;0;0;0;27;1
+X3099.2;26;Equipo para bomba de infusión sin Deposito;65;;0;0;0;0;27;1
+W0500.18;26;Aguja para anestesia epidural N° 18;65;;0;0;0;0;27;1
+C1005;14;Atorvastatina 20 mg;7;;0;0;0;0;27;1
+M0111;20;Meloxicam 15 mg ;7;;0;0;0;0;27;1
+L0209;19;Abiraterona Acetato 250 mg;7;;0;0;0;0;27;1
+N0317X;21;Pregabalina 50 mg;7;;0;0;0;0;27;1
+N0318X;21;Pregabalina 75 mg;7;;0;0;0;0;27;1
+N0319X;21;Pregabalina 150 mg;7;;0;0;0;0;27;1
+M0504;20;Acido Zoledronico 4 mg ;27;NULL;0;0;0;0;27;1
+V0308;25;Mesna (Mercapto Etilsulfonato Sodico) 400 mg ;27;;0;0;0;0;27;1
+L0141;19;Rituximab 500 mg/50ml;27;;0;0;0;0;27;1
+J0169 ;18;Meropem 500 mg ;27;NULL;0;0;0;0;27;1
+J0545 ;18;Aciclovir 500 mg;27;NULL;0;0;0;0;27;1
+E0114;35;Anidulafungina 100 mg/30 ml;27;;0;0;0;0;27;1
+E1620;35;Piperaciclina+Tazobactam 4.5 mg;27;;0;0;0;0;27;1
+B0206;13;Acido Tranexámico 500 mg;27;;0;0;0;0;27;1
+X3098.18;26;Sonda aspiracion N°18;65;;0;0;0;0;27;1
+E1208;35;Linezolid 600 mg/300 ml;67;;0;0;0;0;27;1
+L0140;19;Irinitecan 100mg/5ml;27;;0;0;0;0;27;1
+W1200.2.5;26;Tubo endotraqueal N° 2.5;65;;0;0;0;0;27;1
+W1200.3;26;Tubo endotraqueal N° 3;65;;0;0;0;0;27;1
+W1200.3.5;26;Tubo endotraqueal N° 3.5;65;;0;0;0;0;27;1
+W1200.8;26;Tubo endotraqueal N° 8;65;;0;0;0;0;27;1
+W1200.8.5;26;Tubo endotraqueal N° 8.5;65;;0;0;0;0;27;1
+X3092.18;26;sonda T Dif. Nº 18;43;;0;0;0;0;27;1
+J0171;18;Amoxicilina + inhibidor betalactamasa 875 mg + Segun disponibilidad;7;;0;0;0;0;27;1
+B0310;13;Acido folico 800 mcg;7;;0;0;0;0;27;1
+X0303;26;Cateter doble lumen p/hemodilaisis 12 FR 20 cm;65;;0;0;0;0;27;1
+X3104;26;Drenaje Aspirativo 150 ml cateter Nº difte;65;;0;0;0;0;27;1
+N0320;21;Pregabalina 75 mg;4;;0;0;0;0;27;1
+D0603;15;Aciclovir 5% crema dermica;12;;0;0;0;0;27;1
+C0704;14;Carvedilol 6.25 mg ;7;;0;0;0;0;27;1
+W0500.A50;26;Aguja para anestesia Plexos A-50;65;;0;0;0;0;27;1
+HALOPERIDOL;21;5MG/ML;27;;0;0;0;0;27;1
+N0517;21;Haloperidol 5mg/ml;27;;0;0;0;0;27;1
+X3008;26;Sistema cerrado de aspiracion traqueal;65;;0;0;0;0;27;1
+X3006;26;Filtro antimicrobiano p/resp;65;;0;0;0;0;27;1
+X3007;26;Tubo corrugado;65;;0;0;0;0;27;1
+J0536;18;Oseltamivir 75 mg.;2;;0;0;0;0;27;1
+L0143;19;Trastuzumab 600mg;27;;0;0;0;0;27;1
+N0321;21;Pregabalina 150 mg;4;;0;0;0;0;27;1
+N0319.50;21;Pregabalina 50 mg;4;;0;0;0;0;27;1
+H0204.A;17;Dexametasona 8mg/2ml;27;;0;0;0;0;27;1
+X3092.16;26;Sonda T Nº 16 ;65;;0;0;0;0;27;1
+J0529;18;Valganciclovir 450 mg;7;;0;0;0;0;27;1
+N0316;21;Lamotrigina 50 mg;7;;0;0;0;0;27;1
+N0318;21;Lamotrigina 200 mg;7;;0;0;0;0;27;1
+N0319;21;Pregabalina 50 mg;4;;0;0;0;0;27;1
+E1504;35;Olanzapina 10 mg;8;;0;0;0;0;27;1
+E1702;35;Rifaximida 550 mg;3;;0;0;0;0;27;1
+X3098.10;26;Sonda de aspiracion n° 10;65;;0;0;0;0;27;1
+W1305;26;Canula para traqueotomia n° 5;65;;0;0;0;0;27;1
+W1306;26;Canula para traqueotominan°6;65;;0;0;0;0;27;1
+P0214;22;Ivermectina 6 mg;2;;0;0;0;0;27;1
+X3070.1;26;Jeringas descartables 1ml;65;;0;0;0;0;27;1
+W0526;26;Aguja espinal N° 26;65;;0;0;0;0;27;1
+X3081.6;26;Peolene N° 6/0;65;;0;0;0;0;27;1
+X3082.0;26;Seda con aguja N° 0;43;;0;0;0;0;27;1
+B0103.A;13;Heparina de bajo peso molecular  60 mg/0.6 ml;27;;0;0;0;0;27;1
+E1208.A;35;Levetiracetam 100mg/ml;51;;0;0;0;0;27;1
+N0608;21;Duloxetina 30mg;2;;0;0;0;0;27;1
+E0605 ;35;Fulvestrant 250 mg/5ml;27;;0;0;0;0;27;1
+N0518;21;Quetiapina 100 mg;7;;0;0;0;0;27;1
+E1209;35;Levetiracetam 100mg/ml ;51;;0;0;0;0;27;1
+N0706;21;Piridostigmina 60 mg;7;;0;0;0;0;27;1
+L0417;19;Lenalidomina 25 mg. ;2;;0;0;0;0;27;1
+L0160;19;Paclitaxel 300 mg;27;;0;0;0;0;27;1
+L0415;19;Lenalidomida 10 mg;2;;0;0;0;0;27;1
+L0212;19;Bicalutamida 50 mg;7;;0;0;0;0;27;1
+E0501;35;Eribulina 0,5 mg/ml;27;;0;0;0;0;27;1
