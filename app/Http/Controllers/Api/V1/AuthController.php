@@ -27,7 +27,7 @@ class AuthController extends Controller
             'status' => true,
             'message' => 'Usuario creado satisfactoriamente',
             'token' => $user->createToken('API TOKEN')->plainTextToken,
-            'user' => new UserResource($user->load('entity')),
+            'user' => new UserResource($user->load('entity', 'roles')),
         ], 201);
     }
 
@@ -51,7 +51,7 @@ class AuthController extends Controller
             'status' => true,
             'message' => 'Usuario logeado satisfactoriamente',
             'token' => $user->createToken('API TOKEN')->plainTextToken,
-            'user' => new UserResource($user->load('entity')),
+            'user' => new UserResource($user->load('entity', 'roles')),
         ]);
     }
 
@@ -77,7 +77,7 @@ class AuthController extends Controller
         return response()->json([
             'status' => true,
             'message' => 'Información del usuario',
-            'user' => new UserResource($request->user()->load('entity')),
+            'user' => new UserResource($request->user()->load('entity', 'roles')),
         ]);
     }
 }

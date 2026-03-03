@@ -19,6 +19,26 @@ class UserResource extends JsonResource
                     'descripcion' => $this->entity->descripcion ?? null,
                 ];
             }),
+            'roles' => $this->whenLoaded('roles', function () {
+                return $this->roles->map(function ($role) {
+                    return [
+                        'id' => $role->id,
+                        'name' => $role->name,
+                        'description' => $role->description,
+                    ];
+                });
+            }),
+            'permissions' => $this->whenLoaded('roles', function () {
+                return $this->roles->flatMap(function ($role) {
+                    return $role->permissions->map(function ($permission) {
+                        return [
+                            'id' => $permission->id,
+                            'name' => $permission->name,
+                            'description' => $permission->description,
+                        ];
+                    });
+                })->unique('id')->values();
+            }),
             'created_at' => $this->created_at,
         ];
     }

@@ -21,6 +21,9 @@ use App\Http\Controllers\Api\V1\DischargeReportController;
 use App\Http\Controllers\Api\V1\EntryReportController;
 use App\Http\Controllers\Api\V1\DischageMedicinesReportController;
 use App\Http\Controllers\Api\V1\ServicePersonalController;
+use App\Http\Controllers\Api\V1\RoleController;
+use App\Http\Controllers\Api\V1\PermissionController;
+use App\Http\Controllers\Api\V1\UserController;
 
 
 /*
@@ -45,6 +48,16 @@ use App\Http\Controllers\Api\V1\ServicePersonalController;
         Route::apiResource('categories',CategoryController::class);
         Route::apiResource('suppliers',SupplierController::class);
         Route::apiResource('documentTypes',DocumentTypeController::class);
+
+        // Users, Roles and Permissions endpoints
+        Route::apiResource('users', UserController::class);
+        Route::post('users/{id}/roles', [UserController::class, 'assignRoles']);
+        Route::get('users/{id}/roles', [UserController::class, 'getRoles']);
+
+        Route::apiResource('roles', RoleController::class);
+        Route::apiResource('permissions', PermissionController::class);
+        Route::post('roles/{id}/permissions', [RoleController::class, 'assignPermissions']);
+        Route::get('roles/{id}/permissions', [RoleController::class, 'getPermissions']);
 
         Route::apiResource('entities',EntityController::class);
         Route::apiResource('pharmaceuticalForms',PharmaceuticalFormController::class);
