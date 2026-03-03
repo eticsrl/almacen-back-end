@@ -24,6 +24,7 @@ use App\Http\Controllers\Api\V1\ServicePersonalController;
 use App\Http\Controllers\Api\V1\RoleController;
 use App\Http\Controllers\Api\V1\PermissionController;
 use App\Http\Controllers\Api\V1\UserController;
+use App\Http\Controllers\Api\V1\VariablesConfiguracionController;
 
 
 /*
@@ -66,6 +67,9 @@ use App\Http\Controllers\Api\V1\UserController;
         Route::apiResource('servicePersonals',ServicePersonalController::class);
 
         Route::apiResource('medicinePackages',MedicinePackageController::class);
+
+        Route::apiResource('variablesConfiguracion', VariablesConfiguracionController::class);
+
         Route::get('entries/with-stock', [EntryController::class, 'entryDetailsConStock']);
         Route::get('entries/reentry', [EntryController::class, 'entryDetailsForReentry']);
         Route::post('entries/returns', [EntryController::class, 'storeReturn']);
