@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Entity extends Model
 {
     use HasFactory;
-    protected $fillable = ['descripcion'];
+    protected $fillable = ['descripcion','estado'];
     public function users()
 {
     return $this->belongsToMany(User::class, 'users_entities', 'entities_id', 'users_id')

@@ -15,6 +15,7 @@ class EntityRequest extends FormRequest
     {
         return [
             'descripcion' => ['required', 'string', 'max:255'],
+            'estado' => ['required', 'integer', 'max:1'],
         ];
     }
 }

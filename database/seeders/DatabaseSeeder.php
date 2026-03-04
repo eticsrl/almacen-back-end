@@ -38,6 +38,7 @@ class DatabaseSeeder extends Seeder
                 DocumentTypeSeeder::class,
                 MedicineSeeder::class,
                 ServiceClassificationSeeder::class,
+                ServicePersonalSeeder::class,
 
 
        ];
