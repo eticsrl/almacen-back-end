@@ -14,7 +14,7 @@ class StoreMedicineRequest extends FormRequest
     public function rules(): array
     {
         return [
-                'liname' => 'required|string|max:255',
+                //'codigo' => 'required|string|max:255',
                 'categoriamed_id' => 'required|exists:document_types,id',
                 'formafarmaceutica_id' => 'required|exists:pharmaceutical_forms,id',
                 'nombre_generico' => 'nullable|string|max:255',
@@ -23,8 +23,8 @@ class StoreMedicineRequest extends FormRequest
                 'stockmax' => 'nullable|integer|min:0',
                 'darmax' => 'nullable|integer|min:0',
                 'darmin' => 'nullable|integer|min:0',
-                'estado_id' => 'required|integer',
-                'usr' => 'required|integer',
+                'estado' => 'required|boolean',
+                'usuario_id' => 'required|integer',
         ];
     }
 }

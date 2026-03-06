@@ -16,9 +16,8 @@ class StoreDocumentTypeRequest extends FormRequest
         return [
             'categoria_id' => 'required|integer|exists:categories,id',
             'descripcion' => 'required|string|max:255',
-            'cod_servicio' => 'required|integer',
-            'usr' => 'required|integer',
-            'estado_id' => 'required|integer',
+            'usuario_id' => 'required|integer',
+            'estado' => 'required|boolean',
         ];
     }
 }

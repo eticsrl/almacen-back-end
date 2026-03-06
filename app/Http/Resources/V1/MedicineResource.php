@@ -17,7 +17,7 @@ class MedicineResource extends JsonResource
        // return parent::toArray($request);
        return[
         'id' => $this->id,
-        'liname' => $this->liname,
+        'codigo' => $this->codigo,
         'nombre_generico' => $this->nombre_generico,
         'observaciones' => $this->observaciones,
         'formafarmaceutica_id' => $this->formafarmaceutica_id,
@@ -28,8 +28,8 @@ class MedicineResource extends JsonResource
         'stockmin' => $this->stockmin,
         'darmax' => $this->darmax,
         'darmin' => $this->darmin,
-        'usr' => $this->usr,
-        'estado_id' => $this->estado_id,
+        'usuario_id' => $this->usuario_id,
+        'estado' => $this->estado,
 
 
        ];

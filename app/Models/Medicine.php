@@ -13,7 +13,7 @@ class Medicine extends Model
     public $timestamp=false;
 
     protected $fillable = [
-    'liname',
+    'codigo',
     'nombre_generico',
     'observaciones',
     'formafarmaceutica_id',
@@ -22,8 +22,8 @@ class Medicine extends Model
     'stockmin',
     'darmax',
     'darmin',
-    'usr',
-    'estado_id',];
+    'usuario_id',
+    'estado',];
 
     public function pharmaceuticalForm()
     {

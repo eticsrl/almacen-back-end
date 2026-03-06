@@ -16,7 +16,7 @@ class DocumentTypeController extends Controller
         $categoria_id = $request->query('categoria_id');
 
         $query = DocumentType::with('category:id,descripcion')
-            ->select('id', 'categoria_id', 'descripcion', 'cod_servicio', 'usr', 'estado_id');
+            ->select('id', 'categoria_id', 'descripcion', 'estado', 'usuario_id');
 
         if ($categoria_id) {
             $query->where('categoria_id', $categoria_id);

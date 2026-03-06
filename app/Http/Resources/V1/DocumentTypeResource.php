@@ -20,10 +20,9 @@ class DocumentTypeResource extends JsonResource
             'categoria_id' => $this->categoria_id,
             'categoria' => $this->category ? $this->category->descripcion : null,
             'descripcion' => $this->descripcion,
-            'cod_servicio' => $this->cod_servicio,
-            'usr' => $this->usr,
-            'usuario'=>$this->user ? $this->user->name : null,
-            'estado_id' => $this->estado_id,
+            'usuario_id' => $this->usuario_id,
+            'usuario'=>$this->usuario ? $this->usuario->name : null,
+            'estado' => $this->estado
         ];
     }
 }
