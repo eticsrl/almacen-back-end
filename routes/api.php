@@ -79,6 +79,7 @@ use App\Http\Controllers\Api\V1\VariablesConfiguracionController;
 
         Route::get('/discharges/recetas-dispensadas', [DischargeController::class, 'recetasDispensadas']);
         Route::get('discharges/egresosReceta', [DischargeController::class, 'egresosPorReceta']);
+        Route::post('discharges/{discharge}/activate', [DischargeController::class, 'activate']);
         Route::apiResource('discharges',DischargeController::class);
         /*Reportes*/
         Route::get('reportes/inventario/resumen', [InventarioResumenController::class, 'index'])
@@ -97,6 +98,9 @@ use App\Http\Controllers\Api\V1\VariablesConfiguracionController;
 
         Route::post('auth/logout',[AuthController::class,'logout']);
         Route::get('user/profile', [AuthController::class, 'profile']);
+
+        Route::get('/variables-configuracion', [VariablesConfiguracionController::class, 'index']
+        )->name('variables.configuracion.index');
     });
 
 

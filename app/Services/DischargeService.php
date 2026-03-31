@@ -25,6 +25,7 @@ class DischargeService
                 ->lockForUpdate()
                 ->max('numero') + 1;
 
+            $estado_id = $tipoDocumentoId === 53 ? 27 : 28;
             $discharge = Discharge::create([
                 'fecha_egreso' => $data['fecha_egreso'],
                 'entity_id' => $entityId,
@@ -36,49 +37,65 @@ class DischargeService
                 'proveedor_id' => $data['proveedor_id'] ?? null,
                 'observaciones' => $data['observaciones'] ?? '',
                 'usr' => $userId,
-                'estado_id' => 28, // ACTIVO
+                'estado_id' => $estado_id, // ACTIVO o PENDIENTE DEPENDIENDO DEL TIPO DE DOCUMENTO
             ]);
 
+
             $byItem = []; // Para acumular por receta_item_id (solo si es egreso por receta)
+            if ($estado_id === 28) { // Solo procesar detalles si el estado es ACTIVO (egreso normal o por receta
 
-            foreach ($data['discharge_details'] as $detail) {
+                foreach ($data['discharge_details'] as $detail) {
 
-                $afectadas = EntryDetail::where('id', $detail['ingreso_detalle_id'])
-                ->where('stock_actual', '>=', $detail['cantidad_solicitada'])
-                ->lockForUpdate()
-                ->decrement('stock_actual', $detail['cantidad_solicitada']);
+                    $afectadas = EntryDetail::where('id', $detail['ingreso_detalle_id'])
+                        ->where('stock_actual', '>=', $detail['cantidad_solicitada'])
+                        ->lockForUpdate()
+                        ->decrement('stock_actual', $detail['cantidad_solicitada']);
 
-                if ($afectadas === 0) {
-                    throw new Exception('Stock insuficiente: egreso concurrente.');
+                    if ($afectadas === 0) {
+                        throw new Exception('Stock insuficiente: egreso concurrente.');
+                    }
+
+                    if (round($detail['costo_total'], 4) !== round($detail['cantidad_solicitada'] * $detail['costo_unitario'], 4)) {
+                        throw new Exception('El costo total enviado no coincide con el cálculo esperado.');
+                    }
+
+
+                    DischargeDetail::create([
+                        'egreso_id' => $discharge->id,
+                        'ingreso_detalle_id' => $detail['ingreso_detalle_id'],
+                        'receta_item_id'      => $detail['receta_item_id'] ?? null,
+                        'cantidad_solicitada' => $detail['cantidad_solicitada'],
+                        'costo_unitario' => $detail['costo_unitario'],
+                        'costo_total' => round($detail['cantidad_solicitada'] * $detail['costo_unitario'], 4),
+                        'observaciones' => $detail['observaciones'] ?? '',
+                        'usr' => $userId,
+                        'estado_id' => 28,
+                    ]);
+
+
+                    if ($tipoDocumentoId === 10 && !empty($detail['receta_item_id'])) {
+                        $byItem[$detail['receta_item_id']] = ($byItem[$detail['receta_item_id']] ?? 0)
+                            + (int) $detail['cantidad_solicitada'];
+                    }
                 }
-
-                if (round($detail['costo_total'], 4) !== round($detail['cantidad_solicitada'] * $detail['costo_unitario'], 4)) {
-                    throw new Exception('El costo total enviado no coincide con el cálculo esperado.');
-                }
-
-
+            } else{
+                foreach ($data['discharge_details'] as $detail) {
                 DischargeDetail::create([
-                    'egreso_id' => $discharge->id,
-                    'ingreso_detalle_id' => $detail['ingreso_detalle_id'],
-                    'receta_item_id'      => $detail['receta_item_id'] ?? null,
-                    'cantidad_solicitada' => $detail['cantidad_solicitada'],
-                    'costo_unitario' => $detail['costo_unitario'],
-                    'costo_total' => round($detail['cantidad_solicitada'] * $detail['costo_unitario'], 4),
-                    'observaciones' => $detail['observaciones'] ?? '',
-                    'usr' => $userId,
-                    'estado_id' => 28,
-                ]);
-
-
-                if ($tipoDocumentoId === 10 && !empty($detail['receta_item_id'])) {
-                    $byItem[$detail['receta_item_id']] = ($byItem[$detail['receta_item_id']] ?? 0)
-                        + (int) $detail['cantidad_solicitada'];
+                        'egreso_id' => $discharge->id,
+                        'ingreso_detalle_id' => $detail['ingreso_detalle_id'],
+                        'receta_item_id'      => $detail['receta_item_id'] ?? null,
+                        'cantidad_solicitada' => $detail['cantidad_solicitada'],
+                        'costo_unitario' => $detail['costo_unitario'],
+                        'costo_total' => round($detail['cantidad_solicitada'] * $detail['costo_unitario'], 4),
+                        'observaciones' => $detail['observaciones'] ?? '',
+                        'usr' => $userId,
+                        'estado_id' => 27,
+                    ]);
                 }
-                }
-
-                if ($tipoDocumentoId === 10 && $recetaId && !empty($byItem)) {
-                    $this->syncReceta($recetaId, $byItem);
-                }
+            }
+            if ($tipoDocumentoId === 10 && $recetaId && !empty($byItem)) {
+                $this->syncReceta($recetaId, $byItem);
+            }
 
             return $discharge->load([
                 'dischargeDetails.entryDetail.medicine',
@@ -91,51 +108,134 @@ class DischargeService
             ]);
         });
     }
-        private function syncReceta(int $recetaId, array $byItem): void
-        {
-            DB::connection('mysql_sissu')->transaction(function () use ($recetaId, $byItem) {
-                foreach ($byItem as $recetaItemId => $aEntregarRaw) {
-                    $aEntregar = (int) $aEntregarRaw;
-                    if ($aEntregar <= 0) continue;
 
-                    /** @var \App\Models\RecetaMedicamento $item */
-                    $item = \App\Models\RecetaMedicamento::on('mysql_sissu')
-                        ->where('id', $recetaItemId)
-                        ->where('receta_id', $recetaId)
-                        ->lockForUpdate()
-                        ->firstOrFail();
+    public function activate(Discharge $discharge, array $data, int $userId): Discharge
+    {
+        return DB::transaction(function () use ($discharge, $data, $userId) {
+            $discharge = Discharge::whereKey($discharge->id)
+                ->lockForUpdate()
+                ->firstOrFail();
 
-                    $solicitado   = (int) $item->cantidad;
-                    $pendienteOld = (int) ($item->cantidad_pendiente ?? 0);
-                    $entregadoPrev= $solicitado - $pendienteOld;
+            if ((int) $discharge->estado_id !== 27) {
+                throw new Exception('Solo se puede activar una solicitud en estado PENDIENTE.');
+            }
 
-                    if ($entregadoPrev + $aEntregar > $solicitado) {
-                        throw new \Exception("Cantidad a entregar supera lo solicitado en el ítem {$item->id}");
-                    }
+            $tipoDocumentoId = (int) $data['tipo_documento_id'];
+            $recetaId = $tipoDocumentoId === 10 ? (int) ($data['receta_id'] ?? 0) : null;
 
-                    //  pendiente nuevo = pendiente actual - a entregar
-                    $pendienteNew = max(0, $pendienteOld - $aEntregar);
-                    $estadoItem   = $pendienteNew > 0 ? 1 : 2; // 1=PENDIENTE, 2=ENTREGADO
+            $discharge->update([
+                'fecha_egreso' => $data['fecha_egreso'],
+                'personal_id' => $data['personal_id'] ?? null,
+                'tipo_documento_id' => $tipoDocumentoId,
+                'receta_id' => $recetaId,
+                'servicio_id' => $data['servicio_id'] ?? null,
+                'proveedor_id' => $data['proveedor_id'] ?? null,
+                'observaciones' => $data['observaciones'] ?? '',
+                'estado_id' => 28,
+                'usr_mod' => $userId,
+                'fhr_mod' => now(),
+            ]);
 
-                    // Evita mass assignment: asigna atributo a atributo
-                    $item->cantidad_pendiente   = $pendienteNew;
-                    $item->estadomedicamento_id = $estadoItem;
-                    $item->save();
+            DischargeDetail::where('egreso_id', $discharge->id)->delete();
+
+            $byItem = [];
+
+            foreach ($data['discharge_details'] as $detail) {
+                $cantidadSolicitada = (int) $detail['cantidad_solicitada'];
+                $costoUnitario = (float) $detail['costo_unitario'];
+                $costoTotal = round($cantidadSolicitada * $costoUnitario, 4);
+
+                $afectadas = EntryDetail::where('id', $detail['ingreso_detalle_id'])
+                    ->where('stock_actual', '>=', $cantidadSolicitada)
+                    ->lockForUpdate()
+                    ->decrement('stock_actual', $cantidadSolicitada);
+
+                if ($afectadas === 0) {
+                    throw new Exception('Stock insuficiente para activar la solicitud.');
                 }
 
-                $pendientes = \App\Models\RecetaMedicamento::on('mysql_sissu')
+                if (round((float) $detail['costo_total'], 4) !== $costoTotal) {
+                    throw new Exception('El costo total enviado no coincide con el calculo esperado.');
+                }
+
+                DischargeDetail::create([
+                    'egreso_id' => $discharge->id,
+                    'ingreso_detalle_id' => $detail['ingreso_detalle_id'],
+                    'receta_item_id' => $detail['receta_item_id'] ?? null,
+                    'cantidad_solicitada' => $cantidadSolicitada,
+                    'costo_unitario' => $costoUnitario,
+                    'costo_total' => $costoTotal,
+                    'observaciones' => $detail['observaciones'] ?? '',
+                    'usr' => $userId,
+                    'estado_id' => 28,
+                ]);
+
+                if ($tipoDocumentoId === 10 && !empty($detail['receta_item_id'])) {
+                    $byItem[$detail['receta_item_id']] = ($byItem[$detail['receta_item_id']] ?? 0) + $cantidadSolicitada;
+                }
+            }
+
+            if ($tipoDocumentoId === 10 && $recetaId && !empty($byItem)) {
+                $this->syncReceta($recetaId, $byItem);
+            }
+
+            return $discharge->load([
+                'dischargeDetails.entryDetail.medicine',
+                'entity',
+                'documentType',
+                'supplier',
+                'estate',
+                'user',
+                'service',
+                'personal'
+            ]);
+        });
+    }
+
+    private function syncReceta(int $recetaId, array $byItem): void
+    {
+        DB::connection('mysql_sissu')->transaction(function () use ($recetaId, $byItem) {
+            foreach ($byItem as $recetaItemId => $aEntregarRaw) {
+                $aEntregar = (int) $aEntregarRaw;
+                if ($aEntregar <= 0) continue;
+
+                /** @var \App\Models\RecetaMedicamento $item */
+                $item = \App\Models\RecetaMedicamento::on('mysql_sissu')
+                    ->where('id', $recetaItemId)
                     ->where('receta_id', $recetaId)
-                    ->sum('cantidad_pendiente');
+                    ->lockForUpdate()
+                    ->firstOrFail();
 
-                if ((int) $pendientes === 0) {
-                    \App\Models\Receta::on('mysql_sissu')
-                        ->where('id', $recetaId)
-                        ->update([
-                            'estado_id'     => 2,
-                            'fecha_entrega' => now(),
-                        ]);
+                $solicitado   = (int) $item->cantidad;
+                $pendienteOld = (int) ($item->cantidad_pendiente ?? 0);
+                $entregadoPrev = $solicitado - $pendienteOld;
+
+                if ($entregadoPrev + $aEntregar > $solicitado) {
+                    throw new \Exception("Cantidad a entregar supera lo solicitado en el ítem {$item->id}");
                 }
-            });
-        }
- }
 
+                //  pendiente nuevo = pendiente actual - a entregar
+                $pendienteNew = max(0, $pendienteOld - $aEntregar);
+                $estadoItem   = $pendienteNew > 0 ? 1 : 2; // 1=PENDIENTE, 2=ENTREGADO
+
+                // Evita mass assignment: asigna atributo a atributo
+                $item->cantidad_pendiente   = $pendienteNew;
+                $item->estadomedicamento_id = $estadoItem;
+                $item->save();
+            }
+
+            $pendientes = \App\Models\RecetaMedicamento::on('mysql_sissu')
+                ->where('receta_id', $recetaId)
+                ->sum('cantidad_pendiente');
+
+            if ((int) $pendientes === 0) {
+                \App\Models\Receta::on('mysql_sissu')
+                    ->where('id', $recetaId)
+                    ->update([
+                        'estado_id'     => 2,
+                        'fecha_entrega' => now(),
+                    ]);
+            }
+        });
+    }
+}
