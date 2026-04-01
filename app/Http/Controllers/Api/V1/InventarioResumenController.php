@@ -221,10 +221,6 @@ class InventarioResumenController extends Controller
         $hasta    = \Carbon\Carbon::parse($req->hasta)->endOfDay();
         $entityId = $req->input('entity_id');
 
-        // Nombres de BD externas (SISSU y Afiliación)
-        $sissuDb = config('database.connections.mysql_sissu.database');
-        $afDb    = config('database.connections.mysql_afiliacion.database');
-
         /* -------- SALDO INICIAL -------- */
         $ingPrev = DB::table('entry_details as d')
             ->join('entries as e','e.id','=','d.ingreso_id')
@@ -279,16 +275,6 @@ class InventarioResumenController extends Controller
             ->join('entry_details as d','d.id','=','gd.ingreso_detalle_id')
             ->leftJoin('document_types as tdg', 'tdg.id', '=', 'g.tipo_documento_id') // tipo egreso
 
-            // Datos de receta / paciente / médico (solo si es egreso por receta)
-            ->leftJoin(DB::raw("`$sissuDb`.`recetas` as r"), 'g.receta_id', '=', 'r.id')
-            ->leftJoin(DB::raw("`$afDb`.`persona_afiliado_entidads` as pae"), 'r.paciente_id', '=', 'pae.id')
-            ->leftJoin(DB::raw("`$afDb`.`personas` as ppac"), 'pae.persona_id', '=', 'ppac.id')
-            ->leftJoin(DB::raw("`$afDb`.`fi_med_esps` as mesp"), 'r.medicoespecialidad_id', '=', 'mesp.id')
-            ->leftJoin(DB::raw("`$afDb`.`fi_medicos` as m"), 'mesp.medico_id', '=', 'm.id')
-            ->leftJoin(DB::raw("`$afDb`.`personas` as pmed"), 'm.persona_id', '=', 'pmed.id')
-            ->leftJoin(DB::raw("`$afDb`.`fi_subespecialidads` as esp"), 'esp.id', '=', 'mesp.subespecialidad_id')
-            ->leftJoin(DB::raw("`$afDb`.`fi_modalidads` as fmo"), 'fmo.id', '=', 'esp.modalidad_id')
-
             ->where('gd.estado_id',28)
             ->where('d.medicamento_id',$medId)
             ->when($entityId, fn($q)=>$q->where('g.entity_id',$entityId))
@@ -301,18 +287,7 @@ class InventarioResumenController extends Controller
                 g.tipo_documento_id                   as doc_tipo_id,
                 COALESCE(tdg.descripcion,'')          as doc_tipo,
 
-                -- Observación calculada si es Egreso por Receta (id = 10); ajusta si tu ID es otro
-                CASE WHEN g.tipo_documento_id = 10 THEN
-                    CONCAT(
-                        'Paciente: ',
-                        TRIM(CONCAT_WS(' ', ppac.apellido_paterno, ppac.apellido_materno, ppac.nombre)),
-                        '   Médico: ',
-                        TRIM(CONCAT_WS(' ', pmed.apellido_paterno, pmed.apellido_materno, pmed.nombre)),
-                        '   Especialidad: ',
-                        COALESCE(CONCAT(esp.especialidad, CASE WHEN fmo.modalidad IS NOT NULL THEN CONCAT(' - ', fmo.modalidad) ELSE '' END), '')
-                    )
-                ELSE COALESCE(g.observaciones,'')
-                END                                   as obs_calc,
+                COALESCE(g.observaciones,'')          as obs_calc,
 
                 d.lote                                as lote,
                 d.fecha_vencimiento                   as fecha_venc,

@@ -7,6 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Receta extends Model
 {
-    protected $connection = 'mysql_sissu';
     protected $table = 'recetas';
 }

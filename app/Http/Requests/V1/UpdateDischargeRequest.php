@@ -30,7 +30,7 @@ class UpdateDischargeRequest extends FormRequest
             'observaciones' => 'nullable|string|max:500',
             'discharge_details' => 'sometimes|array',
             'discharge_details.*.ingreso_detalle_id' => 'sometimes|exists:entry_details,id',
-            'discharge_details.*.receta_item_id' => 'sometimes|integer|exists:mysql_sissu.receta_medicamentos,id',
+            'discharge_details.*.receta_item_id' => 'sometimes|integer',
             'discharge_details.*.cantidad_solicitada' => 'sometimes|integer|min:1',
             'discharge_details.*.costo_unitario' => 'sometimes|numeric|min:0',
             'discharge_details.*.costo_total' => 'sometimes|numeric|min:0',

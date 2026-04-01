@@ -24,12 +24,30 @@ class ActivateDischargeRequest extends FormRequest
             'estado_id' => 'required|integer|in:28',
             'discharge_details' => 'required|array|min:1',
             'discharge_details.*.ingreso_detalle_id' => 'required|integer|exists:entry_details,id',
-            'discharge_details.*.receta_item_id' => ['nullable', 'integer', 'exists:mysql_sissu.receta_medicamentos,id', 'required_if:tipo_documento_id,10'],
+            'discharge_details.*.receta_item_id' => ['nullable', 'integer'],
             'discharge_details.*.cantidad_solicitada' => 'required|integer|min:1',
             'discharge_details.*.costo_unitario' => 'required|numeric|min:0',
             'discharge_details.*.costo_total' => 'required|numeric|min:0',
             'discharge_details.*.observaciones' => 'nullable|string',
         ];
+    }
+
+    protected function prepareForValidation(): void
+    {
+        $details = array_map(function (array $detail) {
+            if (array_key_exists('receta_item_id', $detail) && (int) $detail['receta_item_id'] === 0) {
+                $detail['receta_item_id'] = null;
+            }
+
+            return $detail;
+        }, $this->input('discharge_details', []));
+
+        $recetaId = $this->input('receta_id');
+
+        $this->merge([
+            'receta_id' => (is_numeric($recetaId) && (int) $recetaId === 0) ? null : $recetaId,
+            'discharge_details' => $details,
+        ]);
     }
 
     public function messages(): array
@@ -39,7 +57,6 @@ class ActivateDischargeRequest extends FormRequest
             'discharge_details.required' => 'Debes ingresar al menos un item del egreso.',
             'discharge_details.*.ingreso_detalle_id.exists' => 'El ingreso asociado no existe.',
             'discharge_details.*.receta_item_id.required_if' => 'El item de receta es obligatorio en egresos por receta.',
-            'discharge_details.*.receta_item_id.exists' => 'El item de receta no existe en SISSU.',
         ];
     }
 }
